@@ -1,0 +1,97 @@
+.main
+ display: grid
+ grid-template-rows: 1fr auto
+ grid-template-columns: 1fr
+ width: 100%
+ height: 100vh
+
+.main__containermain
+.main__containermain--header
+ nav
+  display: grid
+  grid-template-columns: 1fr repeat(3,auto)
+  align-items: center
+  img
+   width: 50px
+   height: 20px
+   background: red
+ 
+.main__containermain--seccion1
+ display: grid
+ grid-template-columns: 1fr
+ grid-template-rows: repeat(4,auto )
+ img
+  width: 100%
+  height: 100px
+
+
+.main__containermain--seccion2--card
+ display: grid
+ grid-template-columns: 1fr
+ grid-template-rows: repeat(3, auto )
+ justify-items: center
+ img
+  width: 30px
+  height: 30px
+  background: #000
+.main__containermain--seccion3
+ display: grid
+ grid-template-columns: 1fr
+ grid-template-rows: repeat(4, auto )
+ img
+  width: 100%
+  height: 100px
+
+.main__containermain--seccion4
+.main__containermain--seccion4--comments
+ img
+  width: 50px
+  height: 50px
+  border-radius: 50%
+  background: #000
+.main__containermain--seccion5
+.main__containermain--seccion5--form
+ display: grid
+ grid-template-columns: 1fr
+ grid-template-rows: repeat(3,auto)
+ form
+  display: grid
+  grid-template-columns: 1fr
+  grid-template-rows: repeat(2,auto )
+  justify-items: center
+.main__containermain--seccion6
+.main__containermain--seccion6--contact
+ img
+  width: 30px
+  height: 30px
+  background: #000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.containerFooter
+ display: grid
+ justify-items: center
+ background: #000
+ width: 100%
+ h3
+  color: #fff
+  text-align: center
+ a
+  color: #FF3F00
+  text-transform: capitalize
+  text-decoration: none
+ &:hover
+  text-decoration: underline
