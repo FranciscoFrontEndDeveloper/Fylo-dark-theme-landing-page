@@ -4,7 +4,6 @@
  grid-template-columns: 1fr
  width: 100%
  height: 100vh
-
 .main__containermain
 .main__containermain--header
  nav
@@ -22,7 +21,6 @@
  img
   width: 100%
   height: 100px
-
 .main__containermain--seccion2
   display: grid
   grid-template-columns: 1fr
@@ -44,7 +42,6 @@
  img
   width: 100%
   height: 100px
-
 .main__containermain--seccion4
   display: grid
   grid-template-columns: 1fr
@@ -71,42 +68,41 @@
   grid-template-columns: repeat(2,auto)
   grid-template-rows: repeat(5,auto )
   img
+   width: 30px
+   height: 30px
+   grid-row: 1/2
+   grid-column: 1/3
+   background: #000
+  div:nth-child(2)
+   grid-row: 2/3
+   grid-column: 1/3
+   display: grid
+   grid-template-columns: repeat(2,auto )
+   grid-template-rows: repeat(3, auto)
+   img
     width: 30px
     height: 30px
-    grid-row: 1/2
-    grid-column: 1/3
-    background: #000
-  div:nth-child(2)
-    grid-row: 2/3
-    grid-column: 1/3
-    display: grid
-    grid-template-columns: repeat(2,auto )
-    grid-template-rows: repeat(3, auto)
-    img
-      width: 30px
-      height: 30px
-      grid-column: 1/2
-    p
-      grid-column: 2/3
+    grid-column: 1/2
+   p
+    grid-column: 2/3
   div:nth-child(3)
-    grid-row: 3/4
-    grid-column: 1/3
-    display: grid
-    grid-template-columns: 1fr
-    grid-template-rows: repeat(4,auto )
+   grid-row: 3/4
+   grid-column: 1/3
+   display: grid
+   grid-template-columns: 1fr
+   grid-template-rows: repeat(4,auto )
   div:nth-child(4)
-    grid-row: 4/5
-    grid-column: 1/3
-    display: grid
-    grid-template-columns: 1fr
-    grid-template-rows: repeat(3,auto )
+   grid-row: 4/5
+   grid-column: 1/3
+   display: grid
+   grid-template-columns: 1fr
+   grid-template-rows: repeat(3,auto )
   div:nth-child(5)
-    grid-row: 5/6
-    grid-column: 1/3
-    display: grid
-    grid-template-columns: repeat(3, auto)
-    grid-template-rows: 1fr
-    
+   grid-row: 5/6
+   grid-column: 1/3
+   display: grid
+   grid-template-columns: repeat(3, auto)
+   grid-template-rows: 1fr
 .containerFooter
  display: grid
  justify-items: center
@@ -122,111 +118,118 @@
   &:hover
    text-decoration: underline
 
-@media screen and ( min-width: 768px ) and (max-width: 1024px)
-  .main
-    display: grid
-    grid-template-rows: 1fr auto
-    grid-template-columns: 1fr
-    width: 100%
-    height: 100vh
-  .main__containermain
-  .main__containermain--header
-   nav
-    display: grid
-    grid-template-columns: 1fr repeat(3,auto)
-    align-items: center
-    img
-     width: 50px
-     height: 20px
-     background: red
-  .main__containermain--seccion1
+@media screen and ( min-width: 768px ) and (max-width: 1920px)
+ .main
+  display: grid
+  grid-template-rows: 1fr auto
+  grid-template-columns: 1fr
+  width: 100%
+  height: 100vh
+ .main__containermain
+ .main__containermain--header
+  nav
    display: grid
-   grid-template-columns: 1fr
-   grid-template-rows: repeat(4,auto )
+   grid-template-columns: 1fr repeat(3,auto)
+   align-items: center
    img
-    width: 100%
-    height: 100px
-
-  .main__containermain--seccion2
-    display: grid
-    grid-template-columns: 1fr
-    grid-template-rows: repeat(4,auto )
-  .main__containermain--seccion2--card
+    width: 50px
+    height: 20px
+    background: red
+ .main__containermain--seccion1
+  display: grid
+  grid-template-columns: 1fr
+  grid-template-rows: repeat(4,auto )
+  img
+   width: 100%
+   height: 100px
+ .main__containermain--seccion2
    display: grid
-   grid-template-columns: 1fr
-   grid-template-rows: repeat(3, auto )
+   grid-template-columns: repeat(2, auto)
+   grid-template-rows: repeat(2,auto )
+ .main__containermain--seccion2--card
+  display: grid
+  grid-template-columns: 1fr
+  grid-template-rows: repeat(3, auto )
+  justify-items: center
+  img
+   width: 30px
+   height: 30px
+   background: #000
+ .main__containermain--seccion3
+  display: grid
+  grid-template-columns: repeat(2,1fr)
+  grid-template-rows: repeat(3, auto )
+  justify-items: start
+  img
+   width: 100%
+   grid-column: 1/2
+   grid-row: 1/4
+  h2,p,a
+   grid-column: 2/3
+  h2
+   grid-row: 1/2
+  p
+   grid-row: 2/3
+  a
+   grid-row: 3/4 
+ .main__containermain--seccion4
+  display: grid
+  grid-template-columns: repeat(3,1fr)
+  grid-template-rows: 1fr
+ .main__containermain--seccion4--comments
+  img
+   width: 50px
+   height: 50px
+   border-radius: 50%
+   background: #000
+ .main__containermain--seccion5
+ .main__containermain--seccion5--form
+  display: grid
+  grid-template-columns: 1fr
+  grid-template-rows: repeat(3,auto)
+  form
+   display: grid
+   grid-template-columns: repeat(2, auto)
+   grid-template-rows: 1fr
    justify-items: center
+ .main__containermain--seccion6
+ .main__containermain--seccion6--contact
+  display: grid
+  grid-template-columns: repeat(5,auto)
+  grid-template-rows: repeat(2,auto )
+  img
+   width: 30px
+   height: 30px
+   grid-column: 1/6
+   grid-row: 1/2
+   background: #000
+  div:nth-child(2)
+   grid-row: 2/3
+   grid-column: 1/2
+   display: grid
+   grid-template-columns: repeat(2,auto )
+   grid-template-rows: repeat(3, auto)
    img
     width: 30px
     height: 30px
-    background: #000
-  .main__containermain--seccion3
+    grid-column: 1/2
+    p
+     grid-column: 2/3
+  div:nth-child(3)
+   grid-row: 2/3
+   grid-column: 2/3
    display: grid
    grid-template-columns: 1fr
-   grid-template-rows: repeat(4, auto )
-   justify-items: start
-   img
-    width: 100%
-    height: 100px
-
-  .main__containermain--seccion4
-    display: grid
-    grid-template-columns: 1fr
-    grid-template-rows: repeat(3,auto )
-  .main__containermain--seccion4--comments
-   img
-    width: 50px
-    height: 50px
-    border-radius: 50%
-    background: #000
-  .main__containermain--seccion5
-  .main__containermain--seccion5--form
+   grid-template-rows: repeat(4,auto )
+  div:nth-child(4)
+   grid-row: 2/3
+   grid-column: 3/4
    display: grid
    grid-template-columns: 1fr
-   grid-template-rows: repeat(3,auto)
-   form
-    display: grid
-    grid-template-columns: 1fr
-    grid-template-rows: repeat(2,auto )
-    justify-items: center
-  .main__containermain--seccion6
-  .main__containermain--seccion6--contact
-    display: grid
-    grid-template-columns: repeat(2,auto)
-    grid-template-rows: repeat(5,auto )
-    img
-      width: 30px
-      height: 30px
-      grid-row: 1/2
-      grid-column: 1/3
-      background: #000
-    div:nth-child(2)
-      grid-row: 2/3
-      grid-column: 1/3
-      display: grid
-      grid-template-columns: repeat(2,auto )
-      grid-template-rows: repeat(3, auto)
-      img
-        width: 30px
-        height: 30px
-        grid-column: 1/2
-      p
-        grid-column: 2/3
-    div:nth-child(3)
-      grid-row: 3/4
-      grid-column: 1/3
-      display: grid
-      grid-template-columns: 1fr
-      grid-template-rows: repeat(4,auto )
-    div:nth-child(4)
-      grid-row: 4/5
-      grid-column: 1/3
-      display: grid
-      grid-template-columns: 1fr
-      grid-template-rows: repeat(3,auto )
-    div:nth-child(5)
-      grid-row: 5/6
-      grid-column: 1/3
-      display: grid
-      grid-template-columns: repeat(3, auto)
-      grid-template-rows: 1fr
+   grid-template-rows: repeat(3,auto )
+  div:nth-child(5)
+   grid-row: 2/3
+   grid-column: 4/5
+   display: grid
+   grid-template-columns: repeat(3, auto)
+   grid-template-rows: 1fr
